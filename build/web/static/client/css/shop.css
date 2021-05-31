@@ -1,0 +1,251 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 15, 2020, 2:45:10 AM
+    Author     : Admin
+*/
+*{
+   margin: 0;
+   padding: 0;
+}
+.container {
+    width: 100%;
+}
+
+.header {
+    display: block;
+    /* overflow: hidden; */
+}
+
+.navbar div {
+    display: inline-block;
+    margin: 2% 2%;
+    float: right;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-family: Lato;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.navbar a:hover {
+    color: goldenrod !important;
+}
+
+.navbar .logo {
+    float: left !important;
+}
+
+.selector {
+    clear: both;
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.selector span {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.new-arrival {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    padding: 0%;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: white;
+    padding: 10px;
+}
+
+.product-image {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid white;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.product-image {
+    margin-left: 30px;
+    text-align: left !important;
+}
+.product-description{
+	position: relative;
+}
+.product-description button{
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+	background:none;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+.product-description:hover button{
+	opacity : 1;
+}
+.product-description:hover{
+	opacity : 0.8;
+	transition: opacity .35s ease;
+}
+.product-name{
+	margin-top : 10px;
+	margin-bottom : 10px;
+}
+.product-price{
+	margin : 0 0;
+	color : grey;
+	font-size : 18px;
+}
+
+
+.footer {
+    /* height: 30vh; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #878787;
+    padding: 20px !important;
+}
+
+.footer-content {
+    margin-left: 20px !important;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    text-align: left;
+}
+
+.footer-content .fa-instagram {
+    margin-left: 20px !important;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a :hover {
+    color: goldenrod;
+}
+
+@media only screen and (min-width: 720px) {
+    .dropdown div {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    .navbar {
+        display: block;
+    }
+    .navbar i {
+        min-width: 18px;
+        min-height: 18px;
+    }
+    .navbar .option {
+        display: none !important;
+    }
+    .dropbtn {
+        background-color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        float: left !important;
+    }
+    .navbar .logo {
+        float: none !important;
+        margin-left: 20vw;
+    }
+    .dropdown-content {
+        display: none !important;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        right: 500px;
+    }
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+    .dropdown:active .dropdown-content {
+        display: block !important;
+    }
+    .dropdown:active .dropbtn {
+        background-color: #3e8e41;
+    }
+    .banner {
+        width: 100%;
+    }
+    .banner img {
+        width: 100%;
+    }
+    .footer {
+        height: 30vh;
+    }
+    .product-container {
+        display: grid;
+        grid-template-columns: auto;
+        background-color: white;
+        padding: 10px;
+    }
+    .product-image {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid white;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+        border-bottom: 1px solid whitesmoke;
+        margin-left : 0px;
+    }
+    .product-image .product-description {
+        margin-left: 0px;
+        text-align: left !important;
+    }
+}
+
+.img-product {
+    width: 300px;
+    height: 300px;
+}
+.category-type{
+	margin-left: 20px;
+}

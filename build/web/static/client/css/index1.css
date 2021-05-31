@@ -1,0 +1,238 @@
+.popup_off_banner {
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 25px;
+    position: absolute;
+    right: 11px;
+    text-align: center;
+    text-decoration: none;
+    top: 6px;
+    transition: all 0.3s ease-in 0s;
+}
+.container {
+	width: 100%;
+}
+
+.navbar {
+	display: block;
+	/* overflow: hidden; */
+}
+
+.navbar div {
+	display: inline-block;
+	margin: 2% 2%;
+	float: right;
+}
+
+.navbar a {
+	color: black;
+	text-decoration: none;
+	font-family: Lato;
+}
+
+.menu-icon {
+	display: none;
+}
+
+.navbar a:hover {
+	color: goldenrod !important;
+}
+
+.navbar .logo {
+	float: left !important;
+}
+
+.banner {
+	width: 100%;
+	clear : both;
+}
+
+.banner img {
+	width: 100%;
+}
+.banner button{
+	position: absolute;
+  top: 55%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+	background:none;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 1;
+  transition: opacity .35s ease;
+}
+
+.new-arrival {
+	margin-top: 20px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	padding: 0%;
+}
+
+.product-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	/* grid-template-columns: repeat(auto-fit, 320px); */
+	grid-template-rows: repeat(1, 444px);
+	background-color: white;
+	padding: 10px;
+}
+
+.product-image {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid white;
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.middle-banner {
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto;
+	/* grid-template-columns: repeat(auto-fit, 320px); */
+	/* grid-template-rows: repeat(2, 347px); */
+	background-color: white;
+	padding: 0px !important;
+	margin-bottom: 3%;
+}
+
+.middle-image {
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid white;
+	font-size: 30px;
+	text-align: center;
+}
+
+.middle-image img {
+	width: 100%;
+}
+
+.footer {
+	/* height: 30vh; */
+	display: grid;
+	grid-template-columns: auto auto auto;
+	background-color: #878787;
+	padding: 20px !important;
+}
+
+.footer-content {
+	margin-left: 20px !important;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 15px;
+	text-align: left;
+}
+
+.footer-content .fa-instagram {
+	margin-left: 20px !important;
+}
+
+.footer a {
+	color: white;
+	text-decoration: none;
+}
+
+.footer a :hover {
+	color: goldenrod;
+}
+
+@media only screen and (min-width: 720px) {
+	.dropdown div {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+	body {
+		width: 100%;
+	}
+	.container {
+		width: 100%;
+	}
+	.navbar {
+		display: block;
+	}
+	.navbar i {
+		min-width: 18px;
+		min-height: 18px;
+	}
+	.navbar .option {
+		display: none !important;
+	}
+	.dropbtn {
+		background-color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+	}
+	.dropdown {
+		position: relative;
+		display: inline-block;
+		float: left !important;
+	}
+	.navbar .logo {
+		float: none !important;
+		margin-left: 20vw;
+	}
+	.dropdown-content {
+		display: none !important;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		right: 500px;
+	}
+	.dropdown-content a:hover {
+		background-color: #f1f1f1
+	}
+	.dropdown:hover .dropdown-content {
+		display: block !important;
+	}
+	.dropdown:hover .dropbtn {
+		background-color: #3e8e41;
+	}
+	.banner {
+		width: 100%;
+		position : relative;
+	}
+	.banner img {
+		width: 100%;
+	}
+	.footer {
+		height: 30vh;
+	}
+	.middle-banner {
+		width: 100%;
+		display: grid;
+		grid-template-columns: auto;
+		/* grid-template-columns: repeat(auto-fit, 320px); */
+		/* grid-template-rows: repeat(2, 347px); */
+		background-color: white;
+		padding: 0px !important;
+		margin-bottom: 3%;
+    }
+    .product-container{
+	grid-template-columns: repeat(auto-fit, 320px);
+
+    }
+	.product-image {
+		margin-left: 12% !important;
+	}
+}
